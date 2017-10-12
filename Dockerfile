@@ -3,7 +3,7 @@
 #
 FROM golang:1.9-alpine as builder
 
-ARG version="0.10.9"
+ARG version="0.10.10"
 
 RUN apk add --no-cache curl git
 
@@ -27,7 +27,7 @@ RUN cd /go/src/github.com/mholt/caddy/caddy \
 FROM alpine:3.6
 LABEL maintainer "Geoffrey Richard <geoffrey@geofox.org>"
 
-LABEL caddy_version="0.10.9"
+LABEL caddy_version="0.10.10"
 
 RUN apk add --no-cache openssh-client git
 
